@@ -52,7 +52,8 @@ defmodule Exercicios do
 			[x] ++ inn()
 		end
 	end
-	
+
+	# Implementação do somatório
 	def summation(0), do: 0
 	def summation(n) when is_integer(n) and n > 0 do
 		Integer.pow(2,n) - 1 + summation(n-1)
